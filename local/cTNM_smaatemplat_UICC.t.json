@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0ba7c4edbeeedee41b5b928f12642252",
+      "MD5-CAM-1.0.1" : "cea8fc1c798a8b1652093f030f7bf92b",
       "PARENT:MD5-CAM-1.0.1" : "F40A80B8BE6724E2E1110D6227A132A8",
       "original_language" : "ISO_639-1::nb"
     },
@@ -407,17 +407,19 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "DV_CODED_TEXT",
-            "occurrences" : "0..1",
+            "occurrences" : "1..1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "defining_code",
-              "existence" : "0..1",
               "children" : [ {
                 "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
                 "terminologyId" : {
                   "value" : "UICC-TNM-VERSION"
                 },
                 "constraint" : [ ],
+                "selectedTerminologies" : [ "UICC-TNM-VERSION" ],
                 "includedExternalTerminologyCodes" : [ {
                   "terminologyId" : "UICC-TNM-VERSION",
                   "code" : "Edition6",

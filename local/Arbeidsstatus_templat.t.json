@@ -1,0 +1,196 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "0604559a-b8c7-472c-a937-17990b1ed749",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-06-16",
+      "name" : "Liv Laugen",
+      "organisation" : "Oslo universitetssykehus",
+      "email" : "liv.laugen@ous-hf.no"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "2.1.1",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "f944db1b9161653c9d135e1f53b1415e",
+      "PARENT:MD5-CAM-1.0.1" : "390FE85BFBBBFFD67B213B1D55F7E680",
+      "original_language" : "ISO_639-1::nb"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "Et templat inneholdende arbeidsstatus og et standardisert verdisett basert på arbeidet gjort i regi av Direktoratet for e-helse. ",
+        "use" : "Et templat inneholdende arbeidsstatus og et standardisert verdisett basert på arbeidet gjort i regi av Direktoratet for e-helse. \nDette templatet vil bli brukt i det interregionale \"felles kreftjournal\" prosjektet under sosialanamnese.\nVidere bør dette eller tilhørende verdisett også brukes i andre prosjekter hvor det lages skjema hvor man vil dokumentere arbeidsstatus i journal.\n\nVerdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:\n- I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid (dvs. sannsynligvis ikke studenter med deltidsarbeid). Både fulltid og deltid.\n- Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.\n- Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.\n- Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.\n- Ukjent = Ukjent arbeidsstatus.\n\n\n",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.occupation_summary.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.t_occupation_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0002.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0004.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "local_terms"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "local_terms",
+                      "code" : "1",
+                      "value" : "I arbeid"
+                    }, {
+                      "terminologyId" : "local_terms",
+                      "code" : "2",
+                      "value" : "Ikke i arbeid"
+                    }, {
+                      "terminologyId" : "local_terms",
+                      "code" : "3",
+                      "value" : "Alderspensjonist"
+                    }, {
+                      "terminologyId" : "local_terms",
+                      "code" : "4",
+                      "value" : "Under utdanning/studerer"
+                    }, {
+                      "terminologyId" : "local_terms",
+                      "code" : "9",
+                      "value" : "Ukjent"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Arbeidsstatus_templat",
+          "description" : "Summary or persistent information about an individual's current and past jobs and/or roles."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Arbeidsstatus_templat",
+          "description" : "Sammendrag eller varig (persistent) informasjon om et individs nåværende eller tidligere arbeid og/eller roller."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "26cca8ee-f1d7-3756-a174-7be745f286ef",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Arbeidsstatus_templat",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "Silje Ljosland Bakke",
+      "organisation" : "Nasjonal IKT HF"
+    },
+    "otherDetails" : { }
+  } ]
+}

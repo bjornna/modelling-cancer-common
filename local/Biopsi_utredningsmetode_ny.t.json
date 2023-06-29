@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "fbbebad2044db4716f6c903b9aadb5fc",
+      "MD5-CAM-1.0.1" : "f9b0e33dc4cc359c94cbf75688c46b00",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
       "original_language" : "ISO_639-1::nb"
     },
@@ -573,6 +573,13 @@
             "code" : "at0043.1",
             "text" : "Overordnet merknad biopsi",
             "description" : "Fritekstbeskrivelse om undersøkelser som er tidligere utført og som er innenfor kartleggingsformålet."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Undersøkelsesnavn",
+            "description" : "Navnet på en undersøkelse eller gruppe av undersøkelser.",
+            "comment" : "Hvordan modellere mer detaljert angivelse av undersøkelse? \nTenker vi at applikasjonene skal legge inn mer spesifikke koder som er under prosedyren? "
           }
         }
       },

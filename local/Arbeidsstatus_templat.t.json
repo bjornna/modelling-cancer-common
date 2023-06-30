@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "2.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f944db1b9161653c9d135e1f53b1415e",
+      "MD5-CAM-1.0.1" : "6e53c30022dcd522f69246693e05d724",
       "PARENT:MD5-CAM-1.0.1" : "390FE85BFBBBFFD67B213B1D55F7E680",
       "original_language" : "ISO_639-1::nb"
     },
@@ -95,17 +95,19 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "0..1",
+                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
                     "terminologyId" : {
                       "value" : "local_terms"
                     },
                     "constraint" : [ ],
+                    "selectedTerminologies" : [ "local_terms" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "local_terms",
                       "code" : "1",
